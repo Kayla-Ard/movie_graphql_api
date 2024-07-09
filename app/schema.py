@@ -72,7 +72,7 @@ class UpdateMovie(graphene.Mutation):
         if genre:
             movie.genre = genre
         if rating:
-            movie.rating = genre
+            movie.rating = rating
         db.session.commit()
         return UpdateMovie(movie=movie)
 
